@@ -30,7 +30,8 @@ body {
   flex-direction: column;
 }
 
-h3, p {
+h3,
+p {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.664);
 }
 
@@ -41,10 +42,10 @@ h3, p {
 .flip-card {
   background-color: transparent;
   width: 100%;
-  max-width: 250px; 
+  max-width: 250px;
   height: 300px;
   perspective: 1000px;
-  margin: auto; 
+  margin: auto;
 }
 
 .flip-card-inner {
@@ -85,7 +86,7 @@ h3, p {
   padding: 10px;
 }
 
-.flip-card + p {
+.flip-card+p {
   font-size: 1rem;
   font-weight: 500;
   color: white;
@@ -107,6 +108,7 @@ h3, p {
   background-color: rgb(37, 211, 102);
   color: white;
 }
+
 .btn-verde:hover {
   background-color: rgb(25, 128, 62);
   color: white;
@@ -129,12 +131,11 @@ h3, p {
   margin-right: 35px;
 }
 
-
 @media (max-width: 768px) {
   .css-programa-horario strong {
-    width: auto;         
-    margin-right: 10px;  
-    display: block;      
+    width: auto;
+    margin-right: 10px;
+    display: block;
     text-align: left;
   }
 
@@ -143,8 +144,9 @@ h3, p {
     text-align: left;
   }
 
-  .display-1, .display-2 {
-    font-size: 2rem;     
+  .display-1,
+  .display-2 {
+    font-size: 2rem;
   }
 
   #nosotros {
@@ -154,6 +156,6 @@ h3, p {
   }
 
   .flip-card {
-    height: 220px;       
+    height: 220px;
   }
 }
