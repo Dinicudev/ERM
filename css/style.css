@@ -9,7 +9,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -21,21 +20,17 @@ body {
   align-items: center;
 }
 
-
 .bg-mision {
   background-image: url("../img/mision.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  height: auto;
   display: flex;
   flex-direction: column;
 }
 
-
-h3,
-p {
+h3, p {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.664);
 }
 
@@ -43,14 +38,13 @@ p {
   text-align: justify;
 }
 
-
 .flip-card {
   background-color: transparent;
-  width: 250px;
-  /* Ajusta tamaño de la tarjeta */
+  width: 100%;
+  max-width: 250px; 
   height: 300px;
-  /* Ajusta altura */
   perspective: 1000px;
+  margin: auto; 
 }
 
 .flip-card-inner {
@@ -91,21 +85,24 @@ p {
   padding: 10px;
 }
 
-.flip-card+p {
+.flip-card + p {
   font-size: 1rem;
   font-weight: 500;
   color: white;
 }
+
+
 .css-programacion h6 {
   text-align: start;
-
 }
+
 .css-programacion h2 {
   text-align: center;
   font-weight: bold;
   margin: 20px;
   font-style: italic;
 }
+
 .btn-verde {
   background-color: rgb(37, 211, 102);
   color: white;
@@ -118,15 +115,45 @@ p {
 .css-programacion button {
   align-items: center;
 }
+
 .css-programa-horario li {
-  font-size: 18px;      
+  font-size: 18px;
   margin-bottom: 12px;
 }
 
 .css-programa-horario strong {
-  font-size: 20px;      
+  font-size: 20px;
   display: inline-block;
-  width: 150px;    
+  width: 150px;
   text-align: center;
   margin-right: 35px;
+}
+
+
+@media (max-width: 768px) {
+  .css-programa-horario strong {
+    width: auto;         
+    margin-right: 10px;  
+    display: block;      
+    text-align: left;
+  }
+
+  .css-programa-horario li {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .display-1, .display-2 {
+    font-size: 2rem;     
+  }
+
+  #nosotros {
+    flex-direction: column;
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .flip-card {
+    height: 220px;       
+  }
 }
