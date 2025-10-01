@@ -88,7 +88,7 @@ p {
 }
 
 .flip-card+p {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   color: white;
 }
@@ -147,13 +147,13 @@ p {
 
   .display-1,
   .display-2 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   #nosotros {
     flex-direction: column;
     min-height: auto;
-    padding: 2rem 1rem;
+    padding: 32px 16px;
   }
 
   .flip-card {
@@ -181,9 +181,6 @@ p {
   transition: transform .3s ease;
   border-radius: 15px;
   align-items: center;
-
-
-
 }
 
 .hover-zoom img:hover {
@@ -202,7 +199,8 @@ p {
 .carousel-control-next-icon {
   filter: invert(40%) sepia(80%) saturate(500%) hue-rotate(200deg);
 }
-.donation-btn {
+
+.donaciones-btn {
   background: #f1f1f1;
   border: none;
   padding: 10px 20px;
@@ -212,7 +210,7 @@ p {
   transition: 0.3s;
 }
 
-.donation-btn:hover {
+.donaciones-btn:hover {
   background: #0d6efd;
   color: white;
   transform: scale(1.05);
