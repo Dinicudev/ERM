@@ -1,6 +1,7 @@
 body {
   font-family: 'Libre Baskerville', serif;
   overflow-x: hidden;
+  background-color: rgb(244, 239, 229);
 }
 
 .bg-inicio {
@@ -128,7 +129,7 @@ p {
   display: inline-block;
   width: 150px;
   text-align: center;
-  margin-right: 35px;
+  margin-right: 80px;
 }
 
 @media (max-width: 768px) {
@@ -158,4 +159,76 @@ p {
   .flip-card {
     height: 220px;
   }
+}
+
+.btn-galeria {
+  background-color: rgb(235, 76, 76);
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  border: sienna 1px solid;
+}
+
+.btn-galeria:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  border: sienna 1px solid;
+}
+
+.hover-zoom img {
+  transition: transform .3s ease;
+  border-radius: 15px;
+  align-items: center;
+
+
+
+}
+
+.hover-zoom img:hover {
+  transform: scale(1.1);
+}
+
+#contacto p {
+  color: white;
+  text-shadow: none
+}
+
+.carousel-control-prev-icon {
+  filter: invert(40%) sepia(80%) saturate(500%) hue-rotate(200deg);
+}
+
+.carousel-control-next-icon {
+  filter: invert(40%) sepia(80%) saturate(500%) hue-rotate(200deg);
+}
+.donation-btn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.donation-btn:hover {
+  background: #0d6efd;
+  color: white;
+  transform: scale(1.05);
+}
+
+.progress-bar {
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.bg-donaciones {
+  background-image: url("../img/donativos.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
