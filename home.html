@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 </head>
 
@@ -21,7 +22,7 @@
         <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-50 fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold" href="#inicio">
-                    <img src="img/logobs.png" alt="" width="100">
+                    <img src="img/logobs.png" alt="" width="100" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,70 +45,65 @@
 
     <main>
         <section id="inicio" class="bg-inicio flex-column">
-
-            <div class="p-5 m-5">
-                <div class="row justify-content-between">
-                    <div class="col">
+            <div class="p-3 p-lg-5 m-3 m-lg-5">
+                <div class="row justify-content-between text-center text-md-start">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
                         <p>Próximo encuentro:</p>
                         <h3>10 de octubre, 26</h3>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
                         <p>Inicio</p>
                         <h3>5:00 PM</h3>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-4">
                         <p>Lugar</p>
                         <h3>Plaza España, Madrid</h3>
                     </div>
                 </div>
             </div>
 
-
-            <div class=" mt-auto p-5 text-white">
-                <div class="row align-items-center">
+            <div class="mt-auto p-3 p-lg-5 text-white">
+                <div class="row align-items-center text-center text-lg-start">
                     <div class="col-lg-8">
                         <h4>Una generación que clama desde Madrid.</h4>
-                        <img src="img/logobs.png" alt="" class="img-fluid w-50 my-3">
+                        <img src="img/logobs.png" alt="" class="img-fluid w-50 w-md-75 w-lg-50 my-3">
                         <h4>Por lo tanto vayan y hagan discípulos de todas las nacionalidades</h4>
                     </div>
                     <div class="col-lg-4 text-center my-auto">
-                        <button class="btn btn-outline-light btn-lg w-50 fw-bold rounded-5">Descubre</button>
+                        <button class="btn btn-outline-light btn-lg w-100 w-md-50 fw-bold rounded-5">Descubre</button>
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section id="nosotros" class="text-black">
+        <section id="nosotros" class="text-black py-5 ">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <img src="img/nosotros.png" alt="team" class="img-fluid rounded-5 shadow w-75">
+                    <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
+                        <img src="img/nosotros.png" alt="team" class="img-fluid rounded-5 shadow w-75 w-lg-75">
                     </div>
-                    <div class="col-lg-6 p-5 lh-lg">
-                        <h1 class=" fst-italic fw-bold mb-4">¿Qué es el Reino en movimiento?</h1>
-                        <p class="lead ">Somos un equipo de 10 personas apasionadas por la fe, provenientes de
-                            diferentes
-                            orígenes, unidas por un solo propósito: expandir el Reino de Dios. A través de testimonios,
-                            recursos digitales y acciones comunitarias, llevamos el mensaje de amor, esperanza y
-                            salvación a
-                            cada rincón del mundo.</p>
-                        <p>En un mundo en constante cambio, nuestro movimiento se adapta y avanza, inspirando a otros a
-                            unirse a esta misión eterna.</p>
+                    <div class="col-12 col-lg-6 p-3 p-lg-5 lh-lg">
+                        <h1 class="fst-italic fw-bold mb-4 text-center text-lg-start">¿Qué es el Reino en movimiento?
+                        </h1>
+                        <p class="lead text-center text-lg-start">
+                            Somos un equipo de 10 personas apasionadas por la fe, provenientes de
+                            diferentes orígenes, unidas por un solo propósito: expandir el Reino de Dios.
+                        </p>
+                        <p class="text-center text-lg-start">En un mundo en constante cambio, nuestro movimiento se
+                            adapta y avanza, inspirando a otros a unirse a esta misión eterna.</p>
                     </div>
-
                 </div>
             </div>
         </section>
 
         <section id="mision" class="bg-mision">
-            <div class="p-5 m-5">
-                <div class="row text-white align-content-center mb-5">
-                    <div class="col-lg-4">
+            <div class="p-3 p-lg-5 m-3 m-lg-5">
+                <div class="row text-white align-content-center mb-5 text-center text-lg-start">
+                    <div class="col-lg-4 mb-3 mb-lg-0">
                         <p class="fw-bold fst-italic display-1">Misión</p>
                     </div>
                     <div class="col-lg-6 align-content-center">
-                        <h4 class="text-justify lh-base">
+                        <h4 class="lh-base">
                             Compartir el evangelio con el mayor número de personas posible
                             en las calles de Madrid direccionándolas a iglesias locales
                         </h4>
@@ -115,8 +111,7 @@
                 </div>
 
                 <div class="row text-white justify-content-center g-4">
-
-                    <div class="col-md-3 d-flex flex-column align-items-center">
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center">
                         <div class="flip-card w-100">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front d-flex align-items-center justify-content-center">
@@ -130,7 +125,7 @@
                         <p class="mt-2 text-center">Adoración</p>
                     </div>
 
-                    <div class="col-md-3 d-flex flex-column align-items-center">
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center">
                         <div class="flip-card w-100">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front d-flex align-items-center justify-content-center">
@@ -144,7 +139,7 @@
                         <p class="mt-2 text-center">Evangelización</p>
                     </div>
 
-                    <div class="col-md-3 d-flex flex-column align-items-center">
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center">
                         <div class="flip-card w-100">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front d-flex align-items-center justify-content-center">
@@ -158,7 +153,7 @@
                         <p class="mt-2 text-center">Intercesión</p>
                     </div>
 
-                    <div class="col-md-3 d-flex flex-column align-items-center">
+                    <div class="col-6 col-md-3 d-flex flex-column align-items-center">
                         <div class="flip-card w-100">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front d-flex align-items-center justify-content-center">
@@ -175,24 +170,24 @@
             </div>
         </section>
 
-        <section id="programacion" class="bg-white text-dark">
-            <div class="pt-5 mt-5 ps-5 ms-5">
-                <div class="row text-white align-content-center text-dark">
-                    <div class="col-lg-6 text-dark">
+        <section id="programacion" class=" text-dark">
+            <div class="p-5 m-5 ps-3 ps-lg-5 ms-3 ms-lg-5">
+                <div class="row text-dark text-center text-lg-start">
+                    <div class="col-lg-6">
                         <p class="fw-bold fst-italic display-2">Programación</p>
-                        <div class="p-5 lh-lg css-programacion">
+                        <div class="p-3 p-lg-5 lh-lg css-programacion">
                             <h6>Próximo encuentro</h6>
                             <h2>10 de octubre</h2>
-                            <h6>inicio</h6>
+                            <h6>Inicio</h6>
                             <h2>5:00 PM</h2>
                             <h6>Lugar</h6>
                             <h2>Plaza España, Madrid</h2>
-                            <button class="btn btn-verde btn-lg w-75 fw-bold rounded-5 mt-5">Forma parte de la comunidad
-                                en Whatsapp</button>
+                            <button class="btn btn-verde btn-lg w-100 w-md-75 fw-bold rounded-5 mt-4">Forma parte de la
+                                comunidad en Whatsapp</button>
                         </div>
                     </div>
-                    <div class="col-lg-5 pt-5 mt-5 text-dark">
-                        <ul class="list-unstyled lh-lg css-programa-horario">
+                    <div class="col-lg-5 pt-4 pt-lg-5 mt-4 mt-lg-5">
+                        <ul class="list-unstyled lh-lg css-programa-horario text-center text-lg-start">
                             <li><strong>16:50 H</strong> Llegada lugar de encuentro</li>
                             <li><strong>17:15 H</strong> Charla y oración</li>
                             <li><strong>17:30 H</strong> Inicio de evangelismo</li>
@@ -205,14 +200,192 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </section>
 
+        <section id="galeria" class="bg-mision">
+            <div class="p-3 p-lg-5 m-3 m-lg-5">
+                <div class="row text-white align-content-center mb-5 text-center">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <p class="fw-bold fst-italic display-1 text-lg-start">Galeria</p>
+                        <div class="p-3 p-lg-5 lh-lg css-programacion">
+                            <h6>Mejores momentos de nuestros encuentros:</h6>
+                            <button class="btn btn-galeria btn-lg w-100 w-md-75 fw-bold rounded-5 mt-4">12 de
+                                septiembre,
+                                26" - Parque el Retiro</button>
+                            <button class="btn btn-galeria btn-lg w-100 w-md-75 fw-bold rounded-5 mt-4">10 de octubre,
+                                26"
+                                - Plaza españa</button>
+                            <button class="btn btn-galeria btn-lg w-100 w-md-75 fw-bold rounded-5 mt-4">8 de noviembre,
+                                26"
+                                - Plaza de la Libertad</button>
+                            <button class="btn btn-dark btn-lg w-100 w-md-75 fw-bold rounded-5 mt-4">Más
+                                eventos</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 pt-4 pt-lg-5 mt-4 mt-lg-5 d-flex align-items-center justify-content-center">
+                        <div class="hover-zoom p-3  rounded-4 ">
+                            <img src="img/galeria.png" class="img-fluid rounded-3 w-75" alt="Efecto zoom">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="testimonios" class=" text-dark">
+            <div class="p-3 p-lg-5 m-3 m-lg-5">
+
+                <div class="col-lg-4 mb-3 mb-lg-0 align-content-center text-center text-lg-start">
+                    <p class="fw-bold fst-italic display-3">Testimonios</p>
+                </div>
+
+                <div class=" my-5">
+
+                    <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel"
+                        data-bs-interval="6000">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/m2.png" class="rounded-circle mb-2" width="120" height="120"
+                                            alt="Foto">
+                                        <p class="fst-italic fw-bold">Carla Mendoza</p>
+                                        <p class="small">Fue la primera vez que vi como iglesia podíamos llegar a más y
+                                            tuve una gran experiencia con El Señor que cambió mi vida.</p>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/m1.png" class="rounded-circle mb-2" width="120" height="120"
+                                            alt="Foto">
+                                        <p class="fst-italic fw-bold">Pedro López</p>
+                                        <p class="small">Una experiencia única que me fortaleció espiritualmente y me
+                                            unió más a la comunidad.</p>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/portada.jpg" class="rounded-circle mb-2" width="120" height="120"
+                                            alt="Foto">
+                                        <p class="fst-italic fw-bold">Ana Torres</p>
+                                        <p class="small">Gracias a esta experiencia encontré un nuevo sentido de
+                                            comunidad y fe.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/m4.png" class="rounded-circle mb-2" width="120" height="120"
+                                            alt="Foto">
+                                        <p class="fst-italic fw-bold">Juan Pérez</p>
+                                        <p class="small">Una vivencia que me inspiró y me ayudó a seguir adelante en mi
+                                            vida espiritual.</p>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/m3.png" class="rounded-circle mb-2" width="120" height="120"
+                                            alt="Foto">
+                                        <p class="fst-italic fw-bold">Carla Mendoza</p>
+                                        <p class="small">Fue la primera vez que vi como iglesia podíamos llegar a más y
+                                            tuve una gran experiencia con El Señor que cambió mi vida.</p>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/mision.png" class="rounded-circle mb-2" width="120" height="120"
+                                            alt="Foto">
+                                        <p class="fst-italic fw-bold">Pedro López</p>
+                                        <p class="small">Una experiencia única que me fortaleció espiritualmente y me
+                                            unió más a la comunidad.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="donaciones" class="bg-donaciones">
+            <div class="p-3 p-lg-5 m-3 m-lg-5">
+                <p class="fw-bold fst-italic display-1 text-center text-lg-start">Donaciones</p>
+                <div class="container my-5">
+                    <div class="donaciones-card mx-auto text-center p-4 shadow rounded"
+                        style="max-width: 450px; background: #fff;">
+                        <h3 class="mb-3">Apoya nuestra causa</h3>
+                        <p class="text-muted mb-4">Cada donativo nos ayuda a llegar más lejos.</p>
+
+                        <div class="donaciones-options mb-4">
+                            <button class="donaciones-btn">5€</button>
+                            <button class="donaciones-btn">10€</button>
+                            <button class="donaciones-btn">20€</button>
+                            <button class="donaciones-btn">50€</button>
+                        </div>
+
+                        <div class="progress mb-3" style="height: 20px; border-radius: 10px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%;"
+                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                65% recaudado
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-lg w-100">Donar ahora</button>
+
+                        <small class="d-block mt-3 text-muted">Gracias por tu apoyo ❤️</small>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
     </main>
-    <footer>
-        <!-- place footer here -->
+
+    <footer id="contacto" class="bg-black text-light pt-5 pb-3 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 align-content-center text-center text-lg-start">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i> +34 000 000 000</p>
+                    <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i> <a
+                            href="mailto:elreinoenmovement@gmail.com" class="text-decoration-none text-white">
+                            elreinoenmovement@gmail.com
+                        </a></p>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> España</p>
+                </div>
+
+                <div class="col-md-4 mb-4 text-center align-items-center">
+                    <h5 class="fw-bold">Síguenos</h5>
+                    <a href="#" class="text-light me-3 fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/elreinoenmovimiento" class="text-light me-3 fs-4"
+                        aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light fs-4" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+
+                <div class="col-md-4 mb-4 text-md-end text-center">
+                    <img src="img/logobs.png" alt="" class="img-fluid w-25 ">
+                    <p>© 2025 Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

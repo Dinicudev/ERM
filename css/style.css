@@ -1,6 +1,7 @@
 body {
   font-family: 'Libre Baskerville', serif;
   overflow-x: hidden;
+  background-color: rgb(244, 239, 229);
 }
 
 .bg-inicio {
@@ -9,7 +10,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -21,18 +21,15 @@ body {
   align-items: center;
 }
 
-
 .bg-mision {
   background-image: url("../img/mision.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  height: auto;
   display: flex;
   flex-direction: column;
 }
-
 
 h3,
 p {
@@ -43,14 +40,13 @@ p {
   text-align: justify;
 }
 
-
 .flip-card {
   background-color: transparent;
-  width: 250px;
-  /* Ajusta tamaño de la tarjeta */
+  width: 100%;
+  max-width: 250px;
   height: 300px;
-  /* Ajusta altura */
   perspective: 1000px;
+  margin: auto;
 }
 
 .flip-card-inner {
@@ -92,24 +88,28 @@ p {
 }
 
 .flip-card+p {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   color: white;
 }
+
+
 .css-programacion h6 {
   text-align: start;
-
 }
+
 .css-programacion h2 {
   text-align: center;
   font-weight: bold;
   margin: 20px;
   font-style: italic;
 }
+
 .btn-verde {
   background-color: rgb(37, 211, 102);
   color: white;
 }
+
 .btn-verde:hover {
   background-color: rgb(25, 128, 62);
   color: white;
@@ -118,15 +118,115 @@ p {
 .css-programacion button {
   align-items: center;
 }
+
 .css-programa-horario li {
-  font-size: 18px;      
+  font-size: 18px;
   margin-bottom: 12px;
 }
 
 .css-programa-horario strong {
-  font-size: 20px;      
+  font-size: 20px;
   display: inline-block;
-  width: 150px;    
+  width: 150px;
   text-align: center;
-  margin-right: 35px;
+  margin-right: 80px;
+}
+
+@media (max-width: 768px) {
+  .css-programa-horario strong {
+    width: auto;
+    margin-right: 10px;
+    display: block;
+    text-align: left;
+  }
+
+  .css-programa-horario li {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .display-1,
+  .display-2 {
+    font-size: 32px;
+  }
+
+  #nosotros {
+    flex-direction: column;
+    min-height: auto;
+    padding: 32px 16px;
+  }
+
+  .flip-card {
+    height: 220px;
+  }
+}
+
+.btn-galeria {
+  background-color: rgb(235, 76, 76);
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  border: sienna 1px solid;
+}
+
+.btn-galeria:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  border: sienna 1px solid;
+}
+
+.hover-zoom img {
+  transition: transform .3s ease;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.hover-zoom img:hover {
+  transform: scale(1.1);
+}
+
+#contacto p {
+  color: white;
+  text-shadow: none
+}
+
+.carousel-control-prev-icon {
+  filter: invert(40%) sepia(80%) saturate(500%) hue-rotate(200deg);
+}
+
+.carousel-control-next-icon {
+  filter: invert(40%) sepia(80%) saturate(500%) hue-rotate(200deg);
+}
+
+.donaciones-btn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.donaciones-btn:hover {
+  background: #0d6efd;
+  color: white;
+  transform: scale(1.05);
+}
+
+.progress-bar {
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.bg-donaciones {
+  background-image: url("../img/donativos.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
