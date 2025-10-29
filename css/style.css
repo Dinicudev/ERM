@@ -109,19 +109,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-img{
-  background-image: url('../img/multitud.jpg');
+  background-image: url('../img/m3.png');
   background-size: cover;
   background-position: center;
-  filter: brightness(70%);
+  filter: brightness(60%);
+  color: var(--blanco);
 }
-.subrayado::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: var(--rojo);
-  margin: 8px auto 0; /* centrado */
-  border-radius: 3px;
+.detalle-evento h1, 
+.detalle-evento h3 {
+  color: var(--blanco);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6); /* mejora legibilidad sobre fondo oscuro */
+}
+
+.detalle-evento h6 {
+  color: var(--verde);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Botón WhatsApp más contrastante */
+.btn-verde {
+  background-color: var(--verde);
+  color: var(--negro);
+  transition: all 0.3s ease;
+}
+
+.btn-verde:hover {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
 }
 
 /* FORMULARIO */
